@@ -1,0 +1,83 @@
+{
+    "info": {
+      "name": "Profile Management API",
+      "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+      {
+        "name": "Register User",
+        "request": {
+          "method": "POST",
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "body": {
+            "mode": "raw",
+            "raw": "{\n  \"name\": \"Test User\",\n  \"email\": \"universe@gmail.com\",\n  \"password\": \"test123\",\n  \"address\": \"Universe Address\"\n}"
+          },
+          "url": {
+            "raw": "http://localhost:6000/api/auth/register",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "6000",
+            "path": ["api","auth","register"]
+          }
+        }
+      },
+      {
+        "name": "Login User",
+        "request": {
+          "method": "POST",
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "body": {
+            "mode": "raw",
+            "raw": "{\n  \"email\": \"universe@gmail.com\",\n  \"password\": \"test123\"\n}"
+          },
+          "url": {
+            "raw": "http://localhost:6000/api/auth/login",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "6000",
+            "path": ["api","auth","login"]
+          }
+        }
+      },
+      {
+        "name": "Get Profile",
+        "request": {
+          "method": "GET",
+          "header": [
+            {
+              "key": "Authorization",
+              "value": "Bearer {{auth_token}}"
+            }
+          ],
+          "url": {
+            "raw": "http://localhost:6000/api/profile/{{user_id}}",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "6000",
+            "path": ["api","profile","{{user_id}}"]
+          }
+        }
+      }
+    ],
+    "variable": [
+      {
+        "key": "auth_token",
+        "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZTgxNDJhOTYwZTA5NWUxZDM1ZTUwNiIsImlhdCI6MTc0MzI2Mjg2OCwiZXhwIjoxNzQzMjc3MjY4fQ.nbmU-Ej2yonS8JUeUBdjVsjUlO_TJhiZejw-0qwLHKM"
+      },
+      {
+        "key": "user_id",
+        "value": "67e8142a960e095e1d35e506"
+      }
+    ]
+  }
