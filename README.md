@@ -16,15 +16,15 @@ A secure Node.js API for user profiles with JWT authentication.
    cd profile-management-system
    
 2. Install dependencies:
-   '''bash
-   (npm install)'''
+   ```bash
+   (npm install)
    
 4. Set up environment variables:
-   '''bash
+   ```bash
    cp .env.example .env
    
 6. Start the development server:
-   '''bash
+   ```bash
    npm start
    
 ### API Documentation
@@ -45,21 +45,21 @@ Endpoint	             Method	        Description	                Headers Require
 ### Sample Url Commands
 
 Register:
-
+```bash 
 curl -X POST http://localhost:6000/api/auth/register \
 -H "Content-Type: application/json" \
 -d '{"name":"Test User","email":"bibung@gmail.com","password":"test123","address":"Assam"}'
-
+```
 Login:
-
+```bash
 curl -X POST http://localhost:6000/api/auth/login \
 -H "Content-Type: application/json" \
 -d '{"email":"bibung@gmail.com","password":"test123"}'
-
+```
 Get Profile:
-
+```bash
 curl -X GET http://localhost:6000/api/profile/user_id_here \
 -H "Authorization: Bearer 11171"
 
-
+```
    
