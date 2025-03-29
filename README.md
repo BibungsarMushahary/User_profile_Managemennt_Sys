@@ -27,15 +27,15 @@ A secure Node.js API for user profiles with JWT authentication.
    ```bash
    npm start
    
-### API Documentation
+## API Documentation
 
-# Authentication
+### Authentication
 
-Endpoint	              Method	      Description	                Request Body
-/api/auth/register	    POST	        Register new user	          {name, email, password, address}
-/api/auth/login         POST	        Login existing user	        {email, password}
+Endpoint	   |       Method	   |   Description	      |          Request Body
+/api/auth/register	|    POST	     |   Register new user	     |     {name, email, password, address}
+/api/auth/login     |    POST	     |   Login existing user	   |     {email, password}
 
-# Profile Management
+### Profile Management
 
 Endpoint	             Method	        Description	                Headers Required
 /api/profile/:id	     GET	          Get user profile	          Authorization: Bearer <token>
