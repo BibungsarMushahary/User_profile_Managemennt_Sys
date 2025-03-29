@@ -31,7 +31,8 @@ A secure Node.js API for user profiles with JWT authentication.
 
 ### Authentication
 
-Endpoint	   |       Method	   |   Description	      |          Request Body
+|  Endpoint	   |      Method	   |   Description	    |     Request Body |
+| --- | --- | --- | --- |
 /api/auth/register	|    POST	     |   Register new user	     |     {name, email, password, address}
 /api/auth/login     |    POST	     |   Login existing user	   |     {email, password}
 
