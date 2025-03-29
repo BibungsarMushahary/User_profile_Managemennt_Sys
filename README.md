@@ -17,7 +17,7 @@ A secure Node.js API for user profiles with JWT authentication.
    
 2. Install dependencies:
    '''bash
-   (npm install)
+   (npm install)'''
    
 4. Set up environment variables:
    '''bash
