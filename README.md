@@ -38,8 +38,8 @@ A secure Node.js API for user profiles with JWT authentication.
 
 ### Profile Management
 
-|Endpoint	         |    Method	   |     Description	      |          Headers Required|
-| --- | --- | --- |
+| Endpoint	       |    Method	   |     Description	      |        Headers Required|
+| --- | --- | --- | --- | 
 |/api/profile/:id	 |    GET	  |        Get user profile 	   |       Authorization: Bearer <token>|
 |/api/profile/:id	  |   PUT	 |         Update user profile	 |       Authorization: Bearer <token>|
 
